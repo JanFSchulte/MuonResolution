@@ -39,10 +39,13 @@ def makeRatioGraph(f1,f2,xMin,xMax):
 	
 
 sampleLists  = {
-
-	"2017Inclusive":["ana_datamc_DYInclusive2017.root"],
+	"2016MassBinned":["dileptonAna_resolution_2016_dy50to120.root","dileptonAna_resolution_2016_dy120to200.root","dileptonAna_resolution_2016_dy200to400.root","dileptonAna_resolution_2016_dy400to800.root","dileptonAna_resolution_2016_dy800to1400.root","dileptonAna_resolution_2016_dy1400to2300.root","dileptonAna_resolution_2016_dy2300to3500.root","dileptonAna_resolution_2016_dy3500to4500.root","dileptonAna_resolution_2016_dy4500to6000.root","dileptonAna_resolution_2016_dy6000toInf.root"],
+	"2016HIPMMassBinned":["dileptonAna_resolution_2016_dy50to120HIPM.root","dileptonAna_resolution_2016_dy120to200HIPM.root","dileptonAna_resolution_2016_dy200to400HIPM.root","dileptonAna_resolution_2016_dy400to800HIPM.root","dileptonAna_resolution_2016_dy800to1400HIPM.root","dileptonAna_resolution_2016_dy1400to2300HIPM.root","dileptonAna_resolution_2016_dy2300to3500HIPM.root","dileptonAna_resolution_2016_dy3500to4500HIPM.root","dileptonAna_resolution_2016_dy4500to6000HIPM.root","dileptonAna_resolution_2016_dy6000toInfHIPM.root"],
 	"2017MassBinned":["dileptonAna_resolution_dy50to120_UL2017.root","dileptonAna_resolution_dy120to200_UL2017.root","dileptonAna_resolution_dy200to400_UL2017.root","dileptonAna_resolution_dy400to800_UL2017.root","dileptonAna_resolution_dy800to1400_UL2017.root","dileptonAna_resolution_dy1400to2300_UL2017.root","dileptonAna_resolution_dy2300to3500_UL2017.root","dileptonAna_resolution_dy3500to4500_UL2017.root","dileptonAna_resolution_dy4500to6000_UL2017.root","dileptonAna_resolution_dy6000toInf_UL2017.root"],
-	"2017PtBinned":["dileptonAna_resolution_dyInclusive_UL2017.root","dileptonAna_resolution_dyPt150ToInf_UL2017.root"]
+	"2018MassBinned":["dileptonAna_resolution_2018_dy50to120_UL2018.root","dileptonAna_resolution_2018_dy120to200_UL2018.root","dileptonAna_resolution_2018_dy200to400_UL2018.root","dileptonAna_resolution_2018_dy400to800_UL2018.root","dileptonAna_resolution_2018_dy800to1400_UL2018.root","dileptonAna_resolution_2018_dy1400to2300_UL2018.root","dileptonAna_resolution_2018_dy2300to3500_UL2018.root","dileptonAna_resolution_2018_dy3500to4500_UL2018.root","dileptonAna_resolution_2018_dy4500to6000_UL2018.root","dileptonAna_resolution_2018_dy6000toInf_UL2018.root"],
+	"2016PtBinned":["dileptonAna_resolution_2016_dyInclusive50.root","dileptonAna_resolution_2016_dyPt50To100.root","dileptonAna_resolution_2016_dyPt100To250.root","dileptonAna_resolution_2016_dyPt250To400.root","dileptonAna_resolution_2016_dyPt400To600.root","dileptonAna_resolution_2016_dyPt650ToInf.root"],
+	"2017PtBinned":["dileptonAna_resolution_2016_dyInclusive50.root","dileptonAna_resolution_dyPt50To150_1Jet_2017.root","dileptonAna_resolution_dyPt50To150_2Jets_2017.root","dileptonAna_resolution_dyPt150To250_1Jet_2017.root","dileptonAna_resolution_dyPt150To250_2Jets_2017.root","dileptonAna_resolution_dyPt250To400_1Jet_2017.root","dileptonAna_resolution_dyPt250To400_2Jets_2017.root","dileptonAna_resolution_dyPt400ToInf_1Jet_2017.root","dileptonAna_resolution_dyPt400ToInf_2Jets_2017.root","dileptonAna_resolution_dy_3Jets_2017.root","dileptonAna_resolution_dy_4Jets_2017.root"]
+
 }
 
 xSecs = {
@@ -50,10 +53,12 @@ xSecs = {
 	"2016Inclusive": [ 1921.8 ],
 	"2017Inclusive": [ 1921.8 ],
 	"2016MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
+	"2016MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
+	"2016HIPMMassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2017MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2018MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2016PtBinned": [1921.8,363.81428,84.014804,3.228256512,0.436041144,0.040981055],
-	"2017PtBinned": [1921.8,79.1]	
+	"2017PtBinned": [1921.8,491.5,587.8599,27.31,10.99,6.068,5.917,2.536,2.536,119.6,40.44]	
 
 }#   
 

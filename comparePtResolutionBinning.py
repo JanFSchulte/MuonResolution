@@ -52,7 +52,6 @@ def getGraph(result,label):
 	res_data  = TGraphAsymmErrors(len(ptda))
 	res_data.SetName(label)
 	for i,pt in enumerate(ptda):        
-		print da_sig[i]
 		res_data.SetPoint(i,ptda[i],da_sig[i])
 		#~ print ptda[i],ptda[i]-ptbins[i],ptbins[i+1]-ptda[i]
 		res_data.SetPointError(i,ptda[i]-ptbins[i],ptbins[i+1]-ptda[i],da_sige[i],da_sige[i])
@@ -79,14 +78,15 @@ def getRatio(result,result2,label):
 	return ratio
 
 
-def compareMassRes(trackType):
+def compareMassRes(trackType, year):
 	
-	fileDefaultBB = open("Boosteddefault/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	fileORBB = open("BoostedRebin2/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	fileNoBB = open("BoostedRebin4/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	fileDefaultBE = open("Boosteddefault/MassResolutionVsPt_%s_BE.pkl"%trackType)
-	fileORBE = open("BoostedRebin2/MassResolutionVsPt_%s_BE.pkl"%trackType)
-	fileNoBE = open("BoostedRebin4/MassResolutionVsPt_%s_BE.pkl"%trackType)
+
+	fileDefaultBB = open("%sBoosteddefaultLeading/MassResolutionVsPt_%s_Barrel.pkl"%(year,trackType),"rb")
+	fileORBB = open("%sBoostedRebin2Leading/MassResolutionVsPt_%s_Barrel.pkl"%(year,trackType),"rb")
+	fileNoBB = open("%sBoostedRebin4Leading/MassResolutionVsPt_%s_Barrel.pkl"%(year,trackType),"rb")
+	fileDefaultBE = open("%sBoosteddefaultLeading/MassResolutionVsPt_%s_OverlapEndcap.pkl"%(year,trackType),"rb")
+	fileORBE = open("%sBoostedRebin2Leading/MassResolutionVsPt_%s_OverlapEndcap.pkl"%(year,trackType),"rb")
+	fileNoBE = open("%sBoostedRebin4Leading/MassResolutionVsPt_%s_OverlapEndcap.pkl"%(year,trackType),"rb")
 
 	resultsDefaultBB = pickle.load(fileDefaultBB)
 	resultsORBB = pickle.load(fileORBB)
@@ -168,7 +168,7 @@ def compareMassRes(trackType):
 	latexCMSExtra.DrawLatex(0.19,yLabelPos,"%s"%(cmsExtra))			
 
 
-	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s BB"%trackType,"brNDC")
+	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s %s Central"%(trackType, year),"brNDC")
 	leg.SetFillColor(10)
 	leg.SetFillStyle(0)
 	leg.SetLineColor(10)
@@ -193,22 +193,22 @@ def compareMassRes(trackType):
 	ratioORBB.Draw("samepe")
 	ratioNoBB.Draw("samepe")
 
-	canv.Print("massResolutionVsPtBinning_%s_BB.pdf"%trackType)
+	canv.Print("massResolutionVsPtBinning_%s_%s_Central.pdf"%(trackType,year))
 	
-	canv = TCanvas("c1","c1",800,1200)
+	# ~ canv = TCanvas("c1","c1",800,1200)
 
-	plotPad = TPad("plotPad","plotPad",0,0.3,1,1)
-	ratioPad = TPad("ratioPad","ratioPad",0,0.,1,0.3)
-	style = setTDRStyle()
-	gStyle.SetOptStat(0)
-	plotPad.UseCurrentStyle()
-	ratioPad.UseCurrentStyle()
-	plotPad.Draw()	
-	ratioPad.Draw()	
-	plotPad.cd()
-	plotPad.cd()
-	plotPad.SetGrid()
-	gStyle.SetTitleXOffset(1.45)
+	# ~ plotPad = TPad("plotPad","plotPad",0,0.3,1,1)
+	# ~ ratioPad = TPad("ratioPad","ratioPad",0,0.,1,0.3)
+	# ~ style = setTDRStyle()
+	# ~ gStyle.SetOptStat(0)
+	# ~ plotPad.UseCurrentStyle()
+	# ~ ratioPad.UseCurrentStyle()
+	# ~ plotPad.Draw()	
+	# ~ ratioPad.Draw()	
+	# ~ plotPad.cd()
+	# ~ plotPad.cd()
+	# ~ plotPad.SetGrid()
+	# ~ gStyle.SetTitleXOffset(1.45)
 
 	xMax = 6
 	if trackType == "Inner":
@@ -252,7 +252,7 @@ def compareMassRes(trackType):
 	latexCMSExtra.DrawLatex(0.19,yLabelPos,"%s"%(cmsExtra))			
 
 
-	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s BE"%trackType,"brNDC")
+	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s %s Forward"%(trackType, year),"brNDC")
 	leg.SetFillColor(10)
 	leg.SetFillStyle(0)
 	leg.SetLineColor(10)
@@ -278,7 +278,7 @@ def compareMassRes(trackType):
 	ratioNoBE.Draw("samepe")
 
 
-	canv.Print("massResolutionVsPtBinning_%s_BE.pdf"%trackType)
+	canv.Print("massResolutionVsPtBinning_%s_%s_Forward.pdf"%(trackType,year))
 	
 	
 
@@ -286,5 +286,8 @@ def compareMassRes(trackType):
 
 #~ tracks = ["Inner","Outer","Global","TPFMS","Picky","DYT","TunePNew"]
 tracks = ["TunePNew"]
+years = ["2016HIPM","2016","2017","2018"]
+
 for trackType in tracks:
-	compareMassRes(trackType)
+	for year in years:
+		compareMassRes(trackType, year)

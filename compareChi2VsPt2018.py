@@ -57,8 +57,7 @@ def getRatio(result,result2,label,Data=False):
 		sigma = result["mc_nChi2"]
 		sigma2 = result2["mc_nChi2"]
 	
-	print sigma
-	print sigma2
+
 	ratio  = TGraphAsymmErrors(len(ptda))
 	ratio.SetName(label)
 	for i,pt in enumerate(ptda):     
@@ -89,20 +88,26 @@ def getGraph(result,label,Data=False):
 
 def compareMassRes(trackType):
 	
-	file2016BB = open("2018Boosteddefault/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	file2016BE = open("2018Boosteddefault/MassResolutionVsPt_%s_BE.pkl"%trackType)
-	file2017BB = open("2018Boostedcruijff/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	file2017BE = open("2018Boostedcruijff/MassResolutionVsPt_%s_BE.pkl"%trackType)
+	file2016BB = open("2018BoosteddefaultLeadingGT36/MassResolutionVsPt_%s_Barrel.pkl"%trackType,"rb")
+	file2016BE = open("2018BoosteddefaultLeadingGT36/MassResolutionVsPt_%s_OverlapEndcap.pkl"%trackType,"rb")
+	file2017BB = open("2018BoostedcruijffLeading/MassResolutionVsPt_%s_Barrel.pkl"%trackType,"rb")
+	file2017BE = open("2018BoostedcruijffLeading/MassResolutionVsPt_%s_OverlapEndcap.pkl"%trackType,"rb")
+	file2018BB = open("2018BoostedcrystalLeading/MassResolutionVsPt_%s_Barrel.pkl"%trackType,"rb")
+	file2018BE = open("2018BoostedcrystalLeading/MassResolutionVsPt_%s_OverlapEndcap.pkl"%trackType,"rb")
 
 	results2016BB = pickle.load(file2016BB)
 	results2016BE = pickle.load(file2016BE)
 	results2017BB = pickle.load(file2017BB)
 	results2017BE = pickle.load(file2017BE)
+	results2018BB = pickle.load(file2018BB)
+	results2018BE = pickle.load(file2018BE)
 
 	graph2016BB = getGraph(results2016BB,"2016BB",Data=True)
 	graph2016BE = getGraph(results2016BE,"2016BE",Data=True)
 	graph2017BB = getGraph(results2017BB,"2017BB",Data=True)
 	graph2017BE = getGraph(results2017BE,"2017BE",Data=True)
+	graph2018BB = getGraph(results2018BB,"2018BB",Data=True)
+	graph2018BE = getGraph(results2018BE,"2018BE",Data=True)
 		
 	
 	ratioBB = 	getRatio(results2016BB,results2017BB,"ratioBB",Data=True)
@@ -135,8 +140,11 @@ def compareMassRes(trackType):
 
 	graph2016BB.Draw("samepe")
 	graph2017BB.Draw("samepe")
+	graph2018BB.Draw("samepe")
 	graph2017BB.SetLineColor(kRed)
 	graph2017BB.SetMarkerColor(kRed)
+	graph2018BB.SetLineColor(kBlue)
+	graph2018BB.SetMarkerColor(kBlue)
 
 	latex = TLatex()
 	latex.SetTextFont(42)
@@ -164,7 +172,7 @@ def compareMassRes(trackType):
 	latexCMSExtra.DrawLatex(0.19,yLabelPos,"%s"%(cmsExtra))			
 
 
-	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s BB"%trackType,"brNDC")
+	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s Central"%trackType,"brNDC")
 	leg.SetFillColor(10)
 	leg.SetFillStyle(0)
 	leg.SetLineColor(10)
@@ -172,6 +180,7 @@ def compareMassRes(trackType):
 	leg.SetBorderSize(1)		
 	leg.AddEntry(graph2016BB,"Double-Sided CB","l")
 	leg.AddEntry(graph2017BB,"Cruijff","l")
+	leg.AddEntry(graph2018BB,"Crystal Ball","l")
 
 	leg.Draw()
 
@@ -187,7 +196,7 @@ def compareMassRes(trackType):
 	#~ ratioBB.Draw("samepe")
 
 
-	canv.Print("chi2CompareVsPt2018_%s_BB.pdf"%trackType)
+	canv.Print("chi2CompareVsPt2018_%s_Central.pdf"%trackType)
 	
 	
 	canv = TCanvas("c1","c1",800,800)
@@ -215,8 +224,11 @@ def compareMassRes(trackType):
 
 	graph2016BE.Draw("samepe")
 	graph2017BE.Draw("samepe")
+	graph2018BE.Draw("samepe")
 	graph2017BE.SetLineColor(kRed)
 	graph2017BE.SetMarkerColor(kRed)
+	graph2018BE.SetLineColor(kBlue)
+	graph2018BE.SetMarkerColor(kBlue)
 
 	latex = TLatex()
 	latex.SetTextFont(42)
@@ -244,7 +256,7 @@ def compareMassRes(trackType):
 	latexCMSExtra.DrawLatex(0.19,yLabelPos,"%s"%(cmsExtra))			
 
 
-	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s BE"%trackType,"brNDC")
+	leg = TLegend(0.52, 0.76, 0.95, 0.91,"%s Forward"%trackType,"brNDC")
 	leg.SetFillColor(10)
 	leg.SetFillStyle(0)
 	leg.SetLineColor(10)
@@ -252,6 +264,7 @@ def compareMassRes(trackType):
 	leg.SetBorderSize(1)		
 	leg.AddEntry(graph2016BE,"Double-Sided CB","l")
 	leg.AddEntry(graph2017BE,"Cruiff","l")
+	leg.AddEntry(graph2018BE,"Crystal Ball","l")
 
 	leg.Draw()
 
@@ -259,7 +272,7 @@ def compareMassRes(trackType):
 
 
 
-	canv.Print("chi2CompareVsPt2018_%s_BE.pdf"%trackType)
+	canv.Print("chi2CompareVsPt2018_%s_Forward.pdf"%trackType)
 
 
 #~ tracks = ["Inner","Outer","Global","TPFMS","Picky","DYT","TunePNew"]

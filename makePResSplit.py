@@ -45,9 +45,9 @@ sampleLists  = {
 	"2016Inclusive":["ana_datamc_DYInclusive2016.root"],
 	"2017Inclusive":["ana_datamc_DYInclusive2017.root"],
 	"2016MassBinned":["dileptonAna_resolution_2016_dy50to120.root","dileptonAna_resolution_2016_dy120to200.root","dileptonAna_resolution_2016_dy200to400.root","dileptonAna_resolution_2016_dy400to800.root","dileptonAna_resolution_2016_dy800to1400.root","dileptonAna_resolution_2016_dy1400to2300.root","dileptonAna_resolution_2016_dy2300to3500.root","dileptonAna_resolution_2016_dy3500to4500.root","dileptonAna_resolution_2016_dy4500to6000.root","dileptonAna_resolution_2016_dy6000toInf.root"],
-	"2017MassBinned":["dileptonAna_resolution_dy50to120_2017.root","dileptonAna_resolution_dy120to200_2017.root","dileptonAna_resolution_dy200to400_2017.root","dileptonAna_resolution_dy400to800_2017.root","dileptonAna_resolution_dy800to1400_2017.root","dileptonAna_resolution_dy1400to2300_2017.root","dileptonAna_resolution_dy2300to3500_2017.root","dileptonAna_resolution_dy3500to4500_2017.root","dileptonAna_resolution_dy4500to6000_2017.root","dileptonAna_resolution_dy6000toInf_2017.root"],
-	"2017MassBinned":["dileptonAna_resolution_dy50to120_2017.root","dileptonAna_resolution_dy120to200_2017.root","dileptonAna_resolution_dy200to400_2017.root","dileptonAna_resolution_dy400to800_2017.root","dileptonAna_resolution_dy800to1400_2017.root","dileptonAna_resolution_dy1400to2300_2017.root","dileptonAna_resolution_dy2300to3500_2017.root","dileptonAna_resolution_dy3500to4500_2017.root","dileptonAna_resolution_dy4500to6000_2017.root","dileptonAna_resolution_dy6000toInf_2017.root"],
-	"2018MassBinned":["dileptonAna_resolution_2018_dy50to120.root","dileptonAna_resolution_2018_dy120to200.root","dileptonAna_resolution_2018_dy200to400.root","dileptonAna_resolution_2018_dy400to800.root","dileptonAna_resolution_2018_dy800to1400.root","dileptonAna_resolution_2018_dy1400to2300.root","dileptonAna_resolution_2018_dy2300to3500.root","dileptonAna_resolution_2018_dy3500to4500.root","dileptonAna_resolution_2018_dy4500to6000.root","dileptonAna_resolution_2018_dy6000toInf.root"],
+	"2016HIPMMassBinned":["dileptonAna_resolution_2016_dy50to120HIPM.root","dileptonAna_resolution_2016_dy120to200HIPM.root","dileptonAna_resolution_2016_dy200to400HIPM.root","dileptonAna_resolution_2016_dy400to800HIPM.root","dileptonAna_resolution_2016_dy800to1400HIPM.root","dileptonAna_resolution_2016_dy1400to2300HIPM.root","dileptonAna_resolution_2016_dy2300to3500HIPM.root","dileptonAna_resolution_2016_dy3500to4500HIPM.root","dileptonAna_resolution_2016_dy4500to6000HIPM.root","dileptonAna_resolution_2016_dy6000toInfHIPM.root"],
+	"2017MassBinned":["dileptonAna_resolution_dy50to120_UL2017.root","dileptonAna_resolution_dy120to200_UL2017.root","dileptonAna_resolution_dy200to400_UL2017.root","dileptonAna_resolution_dy400to800_UL2017.root","dileptonAna_resolution_dy800to1400_UL2017.root","dileptonAna_resolution_dy1400to2300_UL2017.root","dileptonAna_resolution_dy2300to3500_UL2017.root","dileptonAna_resolution_dy3500to4500_UL2017.root","dileptonAna_resolution_dy4500to6000_UL2017.root","dileptonAna_resolution_dy6000toInf_UL2017.root"],
+	"2018MassBinned":["dileptonAna_resolution_2018_dy50to120_UL2018.root","dileptonAna_resolution_2018_dy120to200_UL2018.root","dileptonAna_resolution_2018_dy200to400_UL2018.root","dileptonAna_resolution_2018_dy400to800_UL2018.root","dileptonAna_resolution_2018_dy800to1400_UL2018.root","dileptonAna_resolution_2018_dy1400to2300_UL2018.root","dileptonAna_resolution_2018_dy2300to3500_UL2018.root","dileptonAna_resolution_2018_dy3500to4500_UL2018.root","dileptonAna_resolution_2018_dy4500to6000_UL2018.root","dileptonAna_resolution_2018_dy6000toInf_UL2018.root"],
 	"2016PtBinned":["dileptonAna_resolution_2016_dyInclusive50.root","dileptonAna_resolution_2016_dyPt50To100.root","dileptonAna_resolution_2016_dyPt100To250.root","dileptonAna_resolution_2016_dyPt250To400.root","dileptonAna_resolution_2016_dyPt400To600.root","dileptonAna_resolution_2016_dyPt650ToInf.root"],
 	"2017PtBinned":["dileptonAna_resolution_2016_dyInclusive50.root","dileptonAna_resolution_dyPt50To150_1Jet_2017.root","dileptonAna_resolution_dyPt50To150_2Jets_2017.root","dileptonAna_resolution_dyPt150To250_1Jet_2017.root","dileptonAna_resolution_dyPt150To250_2Jets_2017.root","dileptonAna_resolution_dyPt250To400_1Jet_2017.root","dileptonAna_resolution_dyPt250To400_2Jets_2017.root","dileptonAna_resolution_dyPt400ToInf_1Jet_2017.root","dileptonAna_resolution_dyPt400ToInf_2Jets_2017.root","dileptonAna_resolution_dy_3Jets_2017.root","dileptonAna_resolution_dy_4Jets_2017.root"]
 
@@ -58,6 +58,7 @@ xSecs = {
 	"2016Inclusive": [ 1921.8 ],
 	"2017Inclusive": [ 1921.8 ],
 	"2016MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
+	"2016HIPMMassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2017MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2018MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2016PtBinned": [1921.8,363.81428,84.014804,3.228256512,0.436041144,0.040981055],
@@ -88,27 +89,31 @@ def loadHistos(inputfiles,region,rebin,trackType,weights):
 		#~ print _file[k].ls()
 		if ("B" in region):
 			tmp   = _file[k].Get("%s/LeptonInvPResVPGen_2d_B" %(histoname)).Clone()
-		elif ("O" in region):
+		elif (region == "O"):
 			tmp   = _file[k].Get("%s/LeptonInvPResVPGen_2d_O" %(histoname)).Clone()
-		elif ("E" in region):
+		elif (region == "E"):
 			tmp   = _file[k].Get("%s/LeptonInvPResVPGen_2d_E" %(histoname)).Clone()
+		elif (region == "OE"):
+			tmp   = _file[k].Get("%s/LeptonInvPResVPGen_2d_O" %(histoname)).Clone()
+			tmp.Add(_file[k].Get("%s/LeptonInvPResVPGen_2d_E" %(histoname)).Clone())
+			
 		tmp.Sumw2()
 		if k==0 and not weights: 
 			hmc = tmp
 		elif k==0 and weights:
-			print k
+			print (k)
 			nEvents = _file[k].Get("EventCounter/Events").GetBinContent(1)
-			print "Weighting with %s " %(1*weights[k]/nEvents)
+			print ("Weighting with %s " %(1*weights[k]/nEvents))
 			tmp.Scale(1*weights[k]/nEvents)
 			hmc = tmp.Clone()
 		elif not weights:
 			hmc.Add(tmp)
 		else: 
 			nEvents = _file[k].Get("EventCounter/Events").GetBinContent(1)			
-			print "Weighting with %s " %(1*weights[k]/nEvents)
+			print ("Weighting with %s " %(1*weights[k]/nEvents))
 			tmp.Scale(1*weights[k]/nEvents)
 			hmc.Add(tmp.Clone())
-	print hmc.GetEntries()
+	print (hmc.GetEntries())
 		
 	for f in _file:
 		f.Close()
@@ -121,13 +126,11 @@ def loadHistos(inputfiles,region,rebin,trackType,weights):
 		
 	c1 = ROOT.TCanvas("c1","c1",700,700)
 	c1.cd()
-	print "hier", rebin
+
 	for i,h in enumerate(histos): 
 		xmin,xmax = getBinRange(hmc,mrange[i],mrange[i+1])
-		print xmin, xmax
 		histos[i] = hmc.ProjectionY("res%s%s" %(mrange[i],region), xmin, xmax)
 		histos[i].Rebin(rebin)
-		print histos[i].Integral()
 		
 #        if (histos[i].Integral() < 5000): 
 #            histos[i].Rebin(2)
@@ -172,9 +175,9 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 			fit_min = FITMIN
 			fit_max = FITMAX
 
-		print "+++++++++++++++++++++++++++++++++++++++++"
-		print "Fitting histogram for %d < m_{ll} <%d, with Range=[%3.2f, %3.2f]" %(mrange[i],mrange[i+1],fit_min,fit_max)
-		print "+++++++++++++++++++++++++++++++++++++++++\n"
+		print ("+++++++++++++++++++++++++++++++++++++++++")
+		print ("Fitting histogram for %d < m_{ll} <%d, with Range=[%3.2f, %3.2f]" %(mrange[i],mrange[i+1],fit_min,fit_max))
+		print ("+++++++++++++++++++++++++++++++++++++++++\n")
 
  
 		# fit with a gaussian to use parameters of the fit for the CB...
@@ -184,18 +187,18 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 		
 		funct = ROOT.TF1()
 		if "cruijff" in fit: 
-			print ">>>>>> Using Cruijff >>>>>>>>"
+			print (">>>>>> Using Cruijff >>>>>>>>")
 			funct = ROOT.TF1(fit,ROOT.cruijff,fit_min,fit_max,5)
 			funct.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2), 0., 0.) #15, 0.001)             
 			funct.SetParNames("Constant","Mean","Sigma","AlphaL","AlphaR")      
 		elif "gaus" in fit:	  
-			print ">>>>>> Using Gauss >>>>>>>>"
+			print (">>>>>> Using Gauss >>>>>>>>")
 			funct = ROOT.TF1(fit,"gaus",fit_min,fit_max)
 			funct.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2)) #15, 0.001)             
 			funct.SetParNames("Constant","Mean","Sigma")        
 
 		elif "crystal" in fit: 
-			print ">>>>>>>>  Using CRYSTAL BALL >>>>>>>>"
+			print (">>>>>>>>  Using CRYSTAL BALL >>>>>>>>")
 			funct = ROOT.TF1(fit,"crystalball",fit_min,fit_max)
 			funct.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2), 1.4, 1.5)
 #            funct.SetParLimits(1, gaus.GetParameter(1)*0.5, gaus.GetParameter(1)*1.5)
@@ -204,7 +207,7 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 			funct.SetParLimits(4, 0., 3.)
 
 		elif "doubleCB" in fit:
-			print ">>>>>>> Using Double Crystal Ball >>>>>>>"
+			print (">>>>>>> Using Double Crystal Ball >>>>>>>")
 			funct = ROOT.TF1(fit, ROOT.doubleCB, fit_min, fit_max, 7)
 			funct.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2), 1.4, 1.4, 1.5, 1.5)
 			funct.SetParLimits(2, 0, 2.5*h.GetRMS())
@@ -214,7 +217,7 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 			funct.SetParLimits(6, 0., 20.)
 			funct.SetParNames("Constant","Mean","Sigma","AlphaL","AlphaR","nL","nR")
 		elif "gaussExp" in fit:
-			print ">>>>>>> Using GaussExp >>>>>>>"
+			print (">>>>>>> Using GaussExp >>>>>>>")
 			funct = ROOT.TF1(fit, ROOT.gaussExp, fit_min, fit_max, 5)
 			funct.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2), 0, 0)
 			funct.SetParLimits(2, 0, 2.5*h.GetRMS())
@@ -229,7 +232,7 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 
 		if syst: 
 			if ("cruijff" in fit): 
-				print ">>>>>>>>  Using DCB for systematics >>>>>>>>"
+				print (">>>>>>>>  Using DCB for systematics >>>>>>>>")
 				systfunc = ROOT.TF1("systfunc",ROOT.doubleCB, fit_min, fit_max, 7)
 				#~ systfunc.SetParameters(funct.GetParameter(0), funct.GetParameter(1), funct.GetParameter(2), 1.4, 2.)
 				systfunc.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2), 1.4, 1.4, 1.5, 1.5)
@@ -241,7 +244,7 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 				systfunc.SetParNames("Constant","Mean","Sigma","AlphaL","AlphaR","nL","nR")
 			
 			elif ("crystal" in fit or "doubleCB" in fit or "gaussExp" in fit or "gaus" in fit): 
-				print ">>>>>>>>  Using CRUIJFF for systematics >>>>>>>>"
+				print (">>>>>>>>  Using CRUIJFF for systematics >>>>>>>>")
 				systfunc = ROOT.TF1("systfunc",ROOT.cruijff, h.GetMean() +xMinFactor*h.GetRMS(),  h.GetMean() +xMaxFactor*h.GetRMS(),5)
 				systfunc.SetParameters(funct.GetParameter(0), funct.GetParameter(1), funct.GetParameter(2), 0., 0.) #15, 0.001)             
 				systfunc.SetParNames("Constant","Mean","Sigma","AlphaL","AlphaR")        
@@ -249,7 +252,7 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 			h.Fit("systfunc","M0R+")
 			
 		if "doubleCB" in fit: 
-			print ">>>>>>>>  Using CB for additional systematics >>>>>>>>"
+			print (">>>>>>>>  Using CB for additional systematics >>>>>>>>")
 			systfunc2 = ROOT.TF1("systfunc2","crystalball", h.GetMean() - 2.3*h.GetRMS() , h.GetMean() + 2.0*h.GetRMS() )
 			systfunc2.SetParameters(gaus.GetParameter(0), gaus.GetParameter(1), gaus.GetParameter(2), 1.4, 1.5)
 #            funct.SetParLimits(1, gaus.GetParameter(1)*0.5, gaus.GetParameter(1)*1.5)
@@ -353,13 +356,13 @@ def doFitGeneric(hist,output,rap="BB",fit="cruijff",syst=False):
 		c1.Print(output+saveas+".png")
 		c1.Print(output+saveas+".pdf")
 		
-	print "DONE Fitting..."
+	print ("DONE Fitting...")
 	return pars,errs,chi2
 
 def doFitWithSyst(hist,output,nrms,rapidity):
-	print "######################################################"
-	print "### FITTING HISTOS AND COMPUTING SYST  ERRORS      ###"
-	print "######################################################"
+	print ("######################################################")
+	print ("### FITTING HISTOS AND COMPUTING SYST  ERRORS      ###")
+	print ("######################################################")
 	(sig     ,err,alp     ,aer,n     ,nerr) = doFit(hist,output,nrms,rapidity)
 	(sig_down,_  ,alp_down,_  ,n_down,_   ) = doFit(hist,output,nrms*0.75,rapidity)
 	(sig_up  ,_  ,alp_up  ,_  ,n_up  ,_   ) = doFit(hist,output,nrms*1.25,rapidity)
@@ -377,9 +380,9 @@ def doFitWithSyst(hist,output,nrms,rapidity):
 		sys     = sys*n[i]
 		nerr[i] = math.sqrt(sys*sys+aer[i]*aer[i])
 
-	print "############"
-	print "### DONE ###"
-	print "############"
+	print ("############")
+	print ("### DONE ###")
+	print ("############")
 	return sig,err,alp,aer,n,nerr
 	
 
@@ -400,13 +403,15 @@ def drawMassResGeneric(hist,output,rapidity,funct="cruijff",trackType="TunePNew"
 	c2 = ROOT.TCanvas("c2","c2",700,700)
 	c2.cd()
 
-	fun  = ROOT.TF1("fun","pol4")
-	fun.SetParNames("A","B","C","D","E")            
+	# ~ fun  = ROOT.TF1("fun","pol4")
+	# ~ fun.SetParNames("A","B","C","D","E")            
+	fun  = ROOT.TF1("fun","pol3")
+	fun.SetParNames("A","B","C","D")            
 	for i in range(fun.GetNpar()): 
 		fun.ReleaseParameter(i)
 		fun.SetParameter(i,0.)
 
-	param = [ROOT.TGraphErrors(len(mass)) for x in range((len(pars)/len(mass))+1)] 
+	param = [ROOT.TGraphErrors(len(mass)) for x in range(int((len(pars)/len(mass)))+1)] 
 	res = ROOT.TGraphErrors(len(mass))
 	
 	result = {}
@@ -450,7 +455,7 @@ def drawMassResGeneric(hist,output,rapidity,funct="cruijff",trackType="TunePNew"
 				elif "Mean" in f.GetName():
 					result["mean"].append(pars[i*nPar+k])
 					result["meanErr"].append(errs[i*nPar+k])
-		print result
+		print (result)
 		if ("Sigma" in f.GetName()):
 			res = param[k]
 
@@ -485,10 +490,11 @@ def drawMassResGeneric(hist,output,rapidity,funct="cruijff",trackType="TunePNew"
 		
 		if ("chi2" not in f.GetName()): 
 			if ("Sigma" in f.GetName()):  
-				print "Fitting Sigma"
-				fun.SetParameters(0.,1E-5,-1.E-8,2E-12,-2E-16)
-				fun.SetParLimits(1, 1.0E-6, 1.0E-4)
+				print ("Fitting Sigma")
+				fun.SetParameters(0.,1E-5,-1.E-8,2E-10)
+				fun.SetParLimits(1, 1.0E-5, 1.0E-4)
 				fun.SetParLimits(2,-1.0E-7,-1.0E-9)
+				fun.SetParLimits(3,0,1.0E-9)
 #                fun.SetParLimits(4,-3.0E-16,-1E-16)
 				#                fun.FixParameter(3,0.)
 #                fun.FixParameter(3,0.)
@@ -518,8 +524,8 @@ def drawMassResGeneric(hist,output,rapidity,funct="cruijff",trackType="TunePNew"
 				fun.SetParLimits(3,-1E-12,-5E-14)
 				fun.FixParameter(4,0.)
 				
-			#~ f.Fit(fun,"MBFE+")            
-			#~ fun.Draw("SAME")
+			f.Fit(fun,"MBFE+")            
+			fun.Draw("SAME")
 
 		
 			latexFit = ROOT.TLatex()
@@ -562,7 +568,7 @@ def drawMassResGeneric(hist,output,rapidity,funct="cruijff",trackType="TunePNew"
 	
 		ROOT.gPad.Update()
 		c2.Clear()
-	pklFile = open(output+"/PResolutionVsP_%s_%s.pkl" %(trackType,rapidity),"w")
+	pklFile = open(output+"/PResolutionVsP_%s_%s.pkl" %(trackType,rapidity),"wb")
 	pickle.dump(result,pklFile)
 	pklFile.close()	
 
@@ -581,9 +587,11 @@ def makeMassRes(inputfile,output,funct,trackType,weights):
 	hist_barrel = loadHistos(inputfile,"B",rebin,trackType,weights)
 	hist_overlap  = loadHistos(inputfile,"O",rebin,trackType,weights)
 	hist_endcap  = loadHistos(inputfile,"E",rebin,trackType,weights)
+	hist_overlapendcap  = loadHistos(inputfile,"OE",rebin,trackType,weights)
 	resB  = drawMassResGeneric(hist_barrel,output,"B",funct,trackType)
 	resO  = drawMassResGeneric(hist_overlap,output,"O",funct,trackType)
 	resE  = drawMassResGeneric(hist_endcap,output,"E",funct,trackType)
+	resOE  = drawMassResGeneric(hist_endcap,output,"OE",funct,trackType)
 	
 	res = ROOT.TCanvas("res","res",700,700)
 	res.cd()
@@ -601,7 +609,7 @@ def makeMassRes(inputfile,output,funct,trackType,weights):
 	resB.GetXaxis().SetTitle("p^{#mu} [GeV]")
 	resB.GetYaxis().SetRangeUser(0,.15)
 	resB.GetXaxis().SetRangeUser(mrange[0],mrange[len(mrange)-1])
-	#~ resB.GetFunction("fun").SetLineColor(ROOT.kRed+1)
+	resB.GetFunction("fun").SetLineColor(ROOT.kRed+1)
 	resB.Draw("AP E0")
 	
 	resO.SetMarkerStyle(20)
@@ -616,7 +624,7 @@ def makeMassRes(inputfile,output,funct,trackType,weights):
 	resO.GetYaxis().SetRangeUser(0,.15)
 	resO.GetXaxis().SetRangeUser(mrange[0],mrange[len(mrange)-1])
 	#~ resO.GetFunction("fun").SetLineColor(ROOT.kGreen+2)
-	resO.Draw("PE0 SAME")
+	# ~ resO.Draw("PE0 SAME")
 	
 	resE.SetMarkerStyle(20)
 	resE.SetMarkerSize(1.0)
@@ -630,7 +638,21 @@ def makeMassRes(inputfile,output,funct,trackType,weights):
 	resE.GetYaxis().SetRangeUser(0,.15)
 	resE.GetXaxis().SetRangeUser(mrange[0],mrange[len(mrange)-1])
 	#~ resE.GetFunction("fun").SetLineColor(ROOT.kBlue)
-	resE.Draw("PE0 SAME")
+	# ~ resE.Draw("PE0 SAME")
+	
+	resOE.SetMarkerStyle(20)
+	resOE.SetMarkerSize(1.0)
+	resOE.SetMarkerColor(ROOT.kBlue)
+	resOE.SetLineColor(ROOT.kBlue)
+	resOE.SetFillColor(0)
+	resOE.SetTitle("Muon p resolution vs p")
+	resOE.GetYaxis().SetTitle("Muon p Resolution")
+	resOE.GetYaxis().SetTitleOffset(1.5)
+ #   resBE.GetXaxis().SetTitle("m(#mu^{+}#mu^{-}) [GeV]")
+	resOE.GetYaxis().SetRangeUser(0,.15)
+	resOE.GetXaxis().SetRangeUser(mrange[0],mrange[len(mrange)-1])
+	resOE.GetFunction("fun").SetLineColor(ROOT.kBlue)
+	resOE.Draw("PE0 SAME")
 
 	latexFitB = ROOT.TLatex()
 	latexFitB.SetTextFont(42)
@@ -650,26 +672,34 @@ def makeMassRes(inputfile,output,funct,trackType,weights):
 	latexFitE.SetNDC(True)        
 	latexFitE.SetTextColor(ROOT.kBlue)
 	
-	latexFitB.DrawLatex(0.19, 0.78,"Barrel")
-	latexFitO.DrawLatex(0.19, 0.74,"Overlap")
-	latexFitE.DrawLatex(0.19, 0.7,"Endcap")
-	#~ for par in range(resB.GetFunction("fun").GetNpar()):
-		#~ yPos = 0.74-0.04*(float(par))
-		#~ latexFitB.DrawLatex(0.19, yPos,"%s = %5.3g #pm %5.3g"%(resB.GetFunction("fun").GetParName(par),resB.GetFunction("fun").GetParameter(par),resB.GetFunction("fun").GetParError(par)))
-		#~ latexFitO.DrawLatex(0.5, yPos,"%s = %5.3g #pm %5.3g"%(resO.GetFunction("fun").GetParName(par),resO.GetFunction("fun").GetParameter(par),resO.GetFunction("fun").GetParError(par)))
-		#~ latexFitE.DrawLatex(0.75, yPos,"%s = %5.3g #pm %5.3g"%(resE.GetFunction("fun").GetParName(par),resE.GetFunction("fun").GetParameter(par),resE.GetFunction("fun").GetParError(par)))
+	latexFitOE = ROOT.TLatex()
+	latexFitOE.SetTextFont(42)
+	latexFitOE.SetTextSize(0.030)
+	latexFitOE.SetNDC(True)        
+	latexFitOE.SetTextColor(ROOT.kBlue)
+	
+	latexFitB.DrawLatex(0.19, 0.78,"Central")
+	# ~ latexFitO.DrawLatex(0.19, 0.74,"Overlap")
+	# ~ latexFitE.DrawLatex(0.19, 0.7,"Endcap")
+	latexFitE.DrawLatex(0.5, 0.78,"Forward")
+	for par in range(resB.GetFunction("fun").GetNpar()):
+		yPos = 0.74-0.04*(float(par))
+		latexFitB.DrawLatex(0.19, yPos,"%s = %5.3g #pm %5.3g"%(resB.GetFunction("fun").GetParName(par),resB.GetFunction("fun").GetParameter(par),resB.GetFunction("fun").GetParError(par)))
+		# ~ latexFitO.DrawLatex(0.5, yPos,"%s = %5.3g #pm %5.3g"%(resO.GetFunction("fun").GetParName(par),resO.GetFunction("fun").GetParameter(par),resO.GetFunction("fun").GetParError(par)))
+		# ~ latexFitE.DrawLatex(0.75, yPos,"%s = %5.3g #pm %5.3g"%(resE.GetFunction("fun").GetParName(par),resE.GetFunction("fun").GetParameter(par),resE.GetFunction("fun").GetParError(par)))
+		latexFitOE.DrawLatex(0.5, yPos,"%s = %5.3g #pm %5.3g"%(resOE.GetFunction("fun").GetParName(par),resOE.GetFunction("fun").GetParameter(par),resOE.GetFunction("fun").GetParError(par)))
 #~ 
 	#~ latexFitB.DrawLatex(0.19, 0.54, "#chi^{2}/ndf = %5.1f / %2.0f = %4.2f" %(resB.GetFunction("fun").GetChisquare(),resB.GetFunction("fun").GetNDF(),resB.GetFunction("fun").GetChisquare()/resB.GetFunction("fun").GetNDF()))
 	#~ latexFitO.DrawLatex(0.50, 0.54, "#chi^{2}/ndf = %5.1f / %2.0f = %4.2f" %(resO.GetFunction("fun").GetChisquare(),resO.GetFunction("fun").GetNDF(),resO.GetFunction("fun").GetChisquare()/resO.GetFunction("fun").GetNDF()))
 	#~ latexFitE.DrawLatex(0.75, 0.54, "#chi^{2}/ndf = %5.1f / %2.0f = %4.2f" %(resE.GetFunction("fun").GetChisquare(),resE.GetFunction("fun").GetNDF(),resE.GetFunction("fun").GetChisquare()/resE.GetFunction("fun").GetNDF()))
 		#~ 
-#    leg = ROOT.TLegend(.35,.7,.50,.80,"","brNDC")
-#    leg.AddEntry(resBB,"BB")
-#    leg.AddEntry(resBE,"BE+EE")
-#    leg.SetTextFont(42)
-#    leg.SetBorderSize(0)
-#    leg.SetTextSize(.04)
-#    leg.Draw("SAME")
+	# ~ leg = ROOT.TLegend(.35,.7,.50,.80,"","brNDC")
+	# ~ leg.AddEntry(resB,"Central")
+	# ~ leg.AddEntry(resOE,"Forward")
+	# ~ leg.SetTextFont(42)
+	# ~ leg.SetBorderSize(0)
+	# ~ leg.SetTextSize(.04)
+	# ~ leg.Draw("SAME")
 
 	latex = ROOT.TLatex()
 	latex.SetTextFont(42)
@@ -728,7 +758,7 @@ if __name__ == "__main__":
 
 	xMinFactor = args.xMinFac
 	xMaxFactor = args.xMaxFac
-	print "blubb", args.rebin
+	print ("blubb", args.rebin)
 	rebin = args.rebin
 
 	if not os.path.exists(args.output):
@@ -738,10 +768,10 @@ if __name__ == "__main__":
 	if args.weight:
 		weights = xSecs[args.inputfile]
 
-	print "Running on: %s " %(inputfiles)
-	print "Saving result in: %s" %(output)
+	print ("Running on: %s " %(inputfiles))
+	print ("Saving result in: %s" %(output))
 	#~ tracks = ["TunePNew"]
 	tracks = ["Inner","Outer","Global","TPFMS","Picky","DYT","TunePNew"]
 	for trackType in tracks:
 		makeMassRes(inputfiles,output,args.funct,trackType,weights)
-	print "DONE"
+	print ("DONE")

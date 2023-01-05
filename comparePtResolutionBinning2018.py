@@ -52,7 +52,6 @@ def getGraph(result,label):
 	res_data  = TGraphAsymmErrors(len(ptda))
 	res_data.SetName(label)
 	for i,pt in enumerate(ptda):        
-		print da_sig[i]
 		res_data.SetPoint(i,ptda[i],da_sig[i])
 		#~ print ptda[i],ptda[i]-ptbins[i],ptbins[i+1]-ptda[i]
 		res_data.SetPointError(i,ptda[i]-ptbins[i],ptbins[i+1]-ptda[i],da_sige[i],da_sige[i])
@@ -81,12 +80,12 @@ def getRatio(result,result2,label):
 
 def compareMassRes(trackType):
 	
-	fileDefaultBB = open("2018Boosteddefault/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	fileORBB = open("2018BoostedRebin2/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	fileNoBB = open("2018BoostedRebin4/MassResolutionVsPt_%s_BB.pkl"%trackType)
-	fileDefaultBE = open("2018Boosteddefault/MassResolutionVsPt_%s_BE.pkl"%trackType)
-	fileORBE = open("2018BoostedRebin2/MassResolutionVsPt_%s_BE.pkl"%trackType)
-	fileNoBE = open("2018BoostedRebin4/MassResolutionVsPt_%s_BE.pkl"%trackType)
+	fileDefaultBB = open("2018BoosteddefaultGT36/MassResolutionVsPt_%s_BB.pkl"%trackType,'rb')
+	fileORBB = open("2018BoostedRebin2/MassResolutionVsPt_%s_BB.pkl"%trackType,'rb')
+	fileNoBB = open("2018BoostedRebin4/MassResolutionVsPt_%s_BB.pkl"%trackType,'rb')
+	fileDefaultBE = open("2018Boosteddefault/MassResolutionVsPt_%s_BE.pkl"%trackType,'rb')
+	fileORBE = open("2018BoostedRebin2/MassResolutionVsPt_%s_BE.pkl"%trackType,'rb')
+	fileNoBE = open("2018BoostedRebin4/MassResolutionVsPt_%s_BE.pkl"%trackType,'rb')
 
 	resultsDefaultBB = pickle.load(fileDefaultBB)
 	resultsORBB = pickle.load(fileORBB)

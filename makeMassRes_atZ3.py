@@ -34,7 +34,8 @@ sampleLists  = {
 	"2017Inclusive":["ana_datamc_DYInclusive2017.root"],
 	"2017MassBinned":["dileptonAna_resolution_dy50to120_UL2017.root","dileptonAna_resolution_dy120to200_UL2017.root","dileptonAna_resolution_dy200to400_UL2017.root","dileptonAna_resolution_dy400to800_UL2017.root","dileptonAna_resolution_dy800to1400_UL2017.root","dileptonAna_resolution_dy1400to2300_UL2017.root","dileptonAna_resolution_dy2300to3500_UL2017.root","dileptonAna_resolution_dy3500to4500_UL2017.root","dileptonAna_resolution_dy4500to6000_UL2017.root","dileptonAna_resolution_dy6000toInf_UL2017.root"],
 	"2017PtBinned":["dileptonAna_resolution_dyInclusive_UL2017.root","dileptonAna_resolution_dyPt50To100_UL2017.root","dileptonAna_resolution_dyPt100To250_UL2017.root","dileptonAna_resolution_dyPt250To400_UL2017.root","dileptonAna_resolution_dyPt400To650_UL2017.root","dileptonAna_resolution_dyPt650ToInf_UL2017.root"],
-	"2018PtBinned":["dileptonAna_resolution_2018_dyInclusive_UL2018.root","dileptonAna_resolution_2018_dyPt50To100_UL2018.root","dileptonAna_resolution_2018_dyPt100To250_UL2018.root","dileptonAna_resolution_2018_dyPt250To400_UL2018.root","dileptonAna_resolution_2018_dyPt400To650_UL2018.root","dileptonAna_resolution_2018_dyPt650ToInf_UL2018.root"]
+	"2018PtBinned":["dileptonAna_resolution_2018_dyInclusive_UL2018.root","dileptonAna_resolution_2018_dyPt50To100_UL2018.root","dileptonAna_resolution_2018_dyPt100To250_UL2018.root","dileptonAna_resolution_2018_dyPt250To400_UL2018.root","dileptonAna_resolution_2018_dyPt400To650_UL2018.root","dileptonAna_resolution_2018_dyPt650ToInf_UL2018.root"],
+	"2022PtBinned":["dileptonAna_resolution_2022_dyInclusive.root"]
 }
 
 xSecs = {
@@ -46,7 +47,8 @@ xSecs = {
 	"2018MassBinned": [1975,19.32,2.731,0.241,1.678e-2,1.39e-3,0.8948e-4,0.4135e-5,4.56e-7,2.06e-8],
 	"2016PtBinned": [1921.8,363.81428,84.014804,3.228256512,0.436041144,0.040981055],
 	"2017PtBinned": [6077.22,363.81428,84.014804,3.228256512,0.436041144,0.040981055],
-	"2018PtBinned": [6077.22,363.81428,84.014804,3.228256512,0.436041144,0.040981055]	
+	"2018PtBinned": [6077.22,363.81428,84.014804,3.228256512,0.436041144,0.040981055],
+	"2022PtBinned": [6077.22]	
 
 }#  
 #    resBB.SetMarkerStyle(22)
